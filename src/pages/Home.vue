@@ -24,7 +24,7 @@
           <a href="">蔬菜</a>
         </li>
         <li>
-          <a href="">j鸡蛋</a>
+          <a href="">鸡蛋</a>
         </li>
         <li>
           <a href="">汤羹</a>

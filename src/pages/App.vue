@@ -20,22 +20,9 @@ export default {
 }
 </script>
 
-<style lang="scss" rel="stylesheet/scss">
+<style lang="scss">
 
-/* Predefine
---------------------- */
-$font-stack: sans-serif;
-
-$color-txt-dft: #202020;
-$color-txt-red: #dd3915;
-$color-bkg-def: #202020;
-$color-bkg-red: #dd3915;
-$color-bkg-green: #84cf6d;
-
-$header-ht: 70px;
-$page-paddaing: 40px;
-
-/* Normal */
+// Normal
 #app {
   font-family: $font-stack;
   -webkit-font-smoothing: antialiased;
@@ -49,9 +36,10 @@ html, body {
 
 a {
   text-decoration: none;
+  color: $color-txt-dft;
 }
 
-/* Btn */
+// Btn
 .btn {
   box-sizing: border-box;
   padding: 13px 25px;
@@ -69,7 +57,7 @@ a {
   color: $color-txt-dft;
 }
 
-/* Header placeholder */
+// Header placeholder
 .hd-placeholder {
   height: $header-ht;
 }

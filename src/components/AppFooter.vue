@@ -34,57 +34,47 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 footer {
   display: flex;
   flex-wrap: wrap;
-  padding: 10px 40px;
-  color: #909090;
-  font-size: 13px;
+  padding: $page-paddaing;
+  font-size: $font-sz-sm;
+  color: $color-txt-gry;
 }
 
-/* Cooperation */
 .coop {
-  padding: 15px 0;
   flex: 0 0 100%;
+  padding: 15px 0;
+  .btn {
+    margin-right: 20px;
+    background-color: $color-bkg-green;
+    font-size: $font-sz-sm;
+  }
 }
 
-.coop .btn {
-  margin-right: 20px;
-  font-size: 13px;
-}
-
-/* Information */
 .info {
   flex: auto;
+  a {
+    color: $color-txt-gry;
+  }
+  div {
+    padding: 3px 0;
+  }
 }
 
-.info a {
-  color: #909090;
-}
-
-.info div {
-  padding: 3px 0;
-}
-
-/* Copyright */
-.copyright div {
-  padding: 3px 0;
-}
-
-/* Social Media */
 .social {
   flex: auto;
   text-align: right;
-}
-
-.scl-icons img {
- height: 18px;
- margin-left: 5px;
-}
-
-.social div {
-  padding: 3px 0;
+  .scl-icons {
+    img {
+      height: 18px;
+      margin-left: 5px;
+    }
+  }
+  div {
+    padding: 3px 0;
+  }
 }
 
 </style>
