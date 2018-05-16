@@ -42,6 +42,9 @@ header {
   align-items: center;
   height: 70px;
   width: 100%;
+  background-color: white;
+  border-bottom: 1px solid rgb(243, 243, 243);
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .08);
 }
 
 .ipt-search {
