@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <app-header></app-header>
     <div class="hd-placeholder"></div>
     <router-view/>
     <app-footer></app-footer>
+    <app-header></app-header>
   </div>
 </template>
 
@@ -21,7 +21,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 // Normal
 #app {
   font-family: $font-stack;
@@ -29,14 +28,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
 }
 
-html, body {
+html, body, ul, li {
   margin: 0;
   padding: 0;
 }
 
 a {
   text-decoration: none;
-  color: $color-txt-dft;
+  color: $color-black-dft;
+}
+
+li {
+  list-style: none;
 }
 
 // Btn
@@ -44,7 +47,7 @@ a {
   box-sizing: border-box;
   padding: 13px 25px;
   border: none;
-  background-color: $color-bkg-def;
+  background-color: $color-black-dft;
   color: white;
   vertical-align: middle;
   cursor: pointer;
@@ -54,12 +57,26 @@ a {
   @extend .btn;
   padding: 0 3px;
   background-color: transparent;
-  color: $color-txt-dft;
+  color: $color-black-dft;
 }
 
 // Header placeholder
 .hd-placeholder {
   height: $header-ht;
+}
+
+// Arrow
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-top: 1px solid $color-grey-lht;
+  border-right: 1px solid $color-grey-lht;
+  vertical-align: middle;
+  transform: rotate(45deg) translate(-50%);
 }
 
 </style>

@@ -38,42 +38,47 @@ export default {
 footer {
   display: flex;
   flex-wrap: wrap;
-  padding: $page-paddaing;
+  padding: 30px $page-pad 80px;
   font-size: $font-sz-sm;
-  color: $color-txt-gry;
-}
+  color: $color-grey-dft;
 
-.coop {
-  flex: 0 0 100%;
-  padding: 15px 0;
-  .btn {
-    margin-right: 20px;
-    background-color: $color-bkg-green;
-    font-size: $font-sz-sm;
-  }
-}
+  .coop {
+    flex: 0 0 100%;
+    padding: 15px 0;
 
-.info {
-  flex: auto;
-  a {
-    color: $color-txt-gry;
-  }
-  div {
-    padding: 3px 0;
-  }
-}
-
-.social {
-  flex: auto;
-  text-align: right;
-  .scl-icons {
-    img {
-      height: 18px;
-      margin-left: 5px;
+    .btn {
+      margin-right: 20px;
+      background-color: $color-green-dft;
+      font-size: $font-sz-sm;
     }
   }
-  div {
-    padding: 3px 0;
+
+  .info {
+    flex: auto;
+
+    a {
+      color: $color-grey-dft;
+    }
+
+    div {
+      padding: 3px 0;
+    }
+  }
+
+  .social {
+    flex: auto;
+    text-align: right;
+
+    .scl-icons {
+      img {
+        height: 18px;
+        margin-left: 5px;
+      }
+    }
+
+    div {
+      padding: 3px 0;
+    }
   }
 }
 

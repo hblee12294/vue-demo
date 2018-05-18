@@ -36,15 +36,17 @@ export default {
 <style lang="scss" scoped>
 header {
   position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   height: $header-ht;
-  width: 100%;
   background-color: white;
   border-bottom: $border;
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .08);
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.08);
 }
 
 .search {
@@ -55,33 +57,36 @@ header {
     padding: 8px;
     outline: none;
     border: $border;
-    color: $color-txt-dft;
+    border-right-color: transparent;
+    color: $color-black-dft;
     font-size: $font-sz-dft;
     letter-spacing: 1px;
     vertical-align: middle;
     transition: .2s;
     &:focus {
-      border: 1px solid #909090;
+      border: $border-fcus;
+      border-right-color: transparent;
     }
   }
+
   .btn {
     height: 44px;
     padding: 0px 16px;
-    background-color: $color-bkg-red;
+    background-color: $color-red-dft;
     font-size: $font-sz-dft;
   }
 }
 
 .menu {
   .btn-txt {
-    color: $color-txt-red;
+    color: $color-red-dft;
     font-size: $font-sz-dft;
   }
 }
 
 .login {
  .btn-txt {
-    color: $color-txt-red;
+    color: $color-red-dft;
     font-size: $font-sz-dft;
   }
 }
