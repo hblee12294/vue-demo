@@ -36,6 +36,7 @@ html, body, ul, li {
 a {
   text-decoration: none;
   color: $color-black-dft;
+  cursor: pointer;
 }
 
 li {
