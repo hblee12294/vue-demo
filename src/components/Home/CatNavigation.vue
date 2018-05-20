@@ -209,7 +209,10 @@ export default {
 $list-dist: 10px;
 
 aside {
+  display: inline-block;
+  vertical-align: top;
   min-width: 130px;
+  padding-right: 40px;
   font-size: $font-sz-md;
 
   .cat-divider {
@@ -272,6 +275,7 @@ aside {
     display: none;
     top: -15px;
     left: 130px;
+    z-index: $zindex-navigation;
     min-height: 100px;
     min-width: 400px;
     padding: 16px 32px;

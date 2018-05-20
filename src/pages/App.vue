@@ -1,9 +1,9 @@
 <template>
   <div id="app">
+    <app-header></app-header>
     <div class="hd-placeholder"></div>
     <router-view/>
     <app-footer></app-footer>
-    <app-header></app-header>
   </div>
 </template>
 
@@ -49,7 +49,7 @@ li {
   padding: 13px 25px;
   border: none;
   background-color: $color-black-dft;
-  color: white;
+  color: $color-white-dft;
   vertical-align: middle;
   cursor: pointer;
 }
