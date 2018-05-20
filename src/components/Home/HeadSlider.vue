@@ -177,6 +177,7 @@ export default {
   min-height: 260px;
   min-width: 490px;
   background-color: $color-black-dft;
+  text-align: left;
 
   .head-slide {
     position: absolute; // Why slide items must be absolute

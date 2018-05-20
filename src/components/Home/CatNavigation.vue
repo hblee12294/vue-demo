@@ -318,7 +318,6 @@ aside {
 
 @for $i from 1 through 13 {
   .cat-normal .cat-item:nth-child(#{$i}) {
-
     .cat-icon {
       background-position: 0 #{-40 * ($i - 1)}px;
     }
@@ -327,7 +326,6 @@ aside {
 
 @for $i from 1 through 4 {
   .cat-special .cat-item:nth-child(#{$i}) {
-
     .cat-icon {
       background-position: 0 #{-560 + -40 * ($i - 1)}px;
     }

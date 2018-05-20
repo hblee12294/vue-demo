@@ -46,11 +46,13 @@ li {
 // Btn
 .btn {
   box-sizing: border-box;
+  display: inline-block;
   padding: 13px 25px;
   border: none;
   background-color: $color-black-dft;
   color: $color-white-dft;
   vertical-align: middle;
+  font-family: $font-stack;
   cursor: pointer;
 }
 
