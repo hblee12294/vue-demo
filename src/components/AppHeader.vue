@@ -10,14 +10,14 @@
         v-model="searchText"><button class="btn">搜菜谱</button>
     </div>
     <div class="hd-item menu">
-      <button class="btn-txt">会员专区</button>
-      <button class="btn-txt">菜谱分类</button>
-      <button class="btn-txt">菜单</button>
-      <button class="btn-txt">作品动态</button>
+      <a href="" class="btn-txt">会员专区</a>
+      <a href="" class="btn-txt">菜谱分类</a>
+      <a href="" class="btn-txt">菜单</a>
+      <a href="" class="btn-txt">作品动态</a>
     </div>
     <div class="hd-item login">
-      <button class="btn-txt">登陆</button>
-      <button class="btn-txt">注册</button>
+      <a class="btn-txt">登陆</a>
+      <a class="btn-txt">注册</a>
     </div>
   </header>
 </template>
@@ -82,6 +82,11 @@ header {
   .btn-txt {
     color: $color-red-dft;
     font-size: $font-sz-dft;
+
+    &:hover {
+      background-color: $color-red-dft;
+      color: $color-white-dft;
+    }
   }
 }
 
@@ -89,6 +94,11 @@ header {
  .btn-txt {
     color: $color-red-dft;
     font-size: $font-sz-dft;
+
+    &:hover {
+      background-color: $color-red-dft;
+      color: $color-white-dft;
+    }
   }
 }
 

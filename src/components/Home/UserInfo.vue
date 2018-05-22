@@ -2,14 +2,16 @@
   <div class="user-info">
     <div class="login">
       <ul class="login-third-party">
-        <li><button class="btn"><i class="login-icon"></i>QQ 登陆</button></li>
-        <li><button class="btn"><i class="login-icon"></i>微博登陆</button></li>
+        <li><a class="btn"><i class="login-icon"></i>QQ 登陆</a></li>
+        <li><a class="btn"><i class="login-icon"></i>微博登陆</a></li>
       </ul>
       <ul class="login-links">
-        <li><a href="" class="btn-txt">手机/邮箱登陆</a></li>
-        <li><a href="" class="btn-txt">注册</a></li>
+        <li><a class="btn-txt" href="">手机/邮箱登陆</a></li>
+        <li class="list-divider">|</li>
+        <li><a class="btn-txt" href="">注册</a></li>
       </ul>
     </div>
+    <div class="report"><a class="btn-txt" href="">网上不良信息举报专区</a></div>
   </div>
 </template>
 
@@ -21,6 +23,7 @@ export default {
 
 <style lang="scss" scoped>
 .user-info {
+  position: relative;
   display: inline-block;
   min-height: 200px;
   min-width: 290px;
@@ -51,6 +54,44 @@ export default {
         margin-right: 8px;
         background: none no-repeat 0;
         background-image: url('../../assets/login-icon.png');
+      }
+    }
+
+    .login-links {
+      font-size: $font-sz-md;
+
+      li {
+        display: inline-block;
+      }
+
+      .list-divider {
+        color: $color-grey-dft;
+        font-size: $font-sz-sm;
+      }
+
+      .btn-txt {
+        color: $color-red-dft;
+
+        &:hover {
+          background-color: $color-red-dft;
+          color: $color-white-dft;
+        }
+      }
+    }
+  }
+
+  .report {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    font-size: $font-sz-md;
+
+    .btn-txt {
+      color: $color-red-dft;
+
+      &:hover {
+        background-color: $color-red-dft;
+        color: $color-white-dft;
       }
     }
   }

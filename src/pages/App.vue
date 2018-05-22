@@ -54,6 +54,7 @@ li {
   vertical-align: middle;
   font-family: $font-stack;
   cursor: pointer;
+  // transition: .1s;
 }
 
 .btn-txt {
@@ -61,6 +62,11 @@ li {
   padding: 0 3px;
   background-color: transparent;
   color: $color-black-dft;
+
+  &:hover {
+    background-color: $color-black-dft;
+    color: $color-white-dft;
+  }
 }
 
 // Header placeholder
