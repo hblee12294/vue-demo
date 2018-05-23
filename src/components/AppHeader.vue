@@ -64,6 +64,7 @@ header {
     letter-spacing: 1px;
     vertical-align: middle;
     transition: .2s;
+
     &:focus {
       border: $border-fcus;
       border-right-color: transparent;

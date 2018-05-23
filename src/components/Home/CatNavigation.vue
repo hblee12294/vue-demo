@@ -212,7 +212,6 @@ aside {
   display: inline-block;
   vertical-align: top;
   min-width: 130px;
-  padding-right: 40px;
   font-size: $font-sz-md;
 
   .cat-divider {

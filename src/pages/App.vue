@@ -85,7 +85,15 @@ li {
   border-top: 1px solid $color-grey-lht;
   border-right: 1px solid $color-grey-lht;
   vertical-align: middle;
-  transform: rotate(45deg) translate(-50%);
+  transform: rotate(45deg) translate(-60%);
+}
+
+.arrow-left {
+  @extend .arrow-right;
+  left: 0;
+  border-left: 1px solid $color-grey-lht;
+  border-right: none;
+  transform: rotate(-45deg) translate(60%);
 }
 
 </style>

@@ -27,7 +27,6 @@ export default {
   display: inline-block;
   min-height: 200px;
   min-width: 290px;
-  margin-left: 20px; // For testing
   padding: 30px 5px;
   margin-bottom: 30px;
   background-color: $color-grey-lhter;
@@ -82,8 +81,9 @@ export default {
 
   .report {
     position: absolute;
+    right: 0;
+    left: 0;
     bottom: 15px;
-    width: 100%;
     font-size: $font-sz-md;
 
     .btn-txt {
