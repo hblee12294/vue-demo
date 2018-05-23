@@ -6,6 +6,7 @@
     <div class="middle-panel">
       <head-slider></head-slider>
       <rising-recipes></rising-recipes>
+      <pop-recipes></pop-recipes>
     </div>
     <div class="right-panel">
       <user-info></user-info>
@@ -18,6 +19,7 @@ import CatNavigation from '@/components/Home/CatNavigation'
 import HeadSlider from '@/components/Home/HeadSlider'
 import UserInfo from '@/components/Home/UserInfo'
 import RisingRecipes from '@/components/Home/RisingRecipes'
+import PopRecipes from '@/components/Home/PopRecipes'
 
 export default {
   name: 'Home',
@@ -25,7 +27,8 @@ export default {
     CatNavigation,
     HeadSlider,
     UserInfo,
-    RisingRecipes
+    RisingRecipes,
+    PopRecipes
   }
 }
 </script>

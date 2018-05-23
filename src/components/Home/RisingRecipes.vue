@@ -1,30 +1,30 @@
 <template>
-<div class="rising-recipes">
-  <div class="title-bar">
-    <div class="title-group">
-      <h3 class="title">新秀菜谱</h3>
-      <a class="btn-txt" href="">全部</a>
+  <div class="rising-recipes">
+    <div class="title-bar">
+      <div class="title-group">
+        <h3 class="title">新秀菜谱</h3>
+        <a class="btn-txt" href="">全部</a>
+      </div>
+      <div class="slider-control">
+        <button class="btn" :class="{ disabled: isFirstSlide }" @click="slide(-1)"><i class="arrow-left"></i></button>
+        <button class="btn" :class="{ disabled: isLastSlide }" @click="slide(1)"><i class="arrow-right"></i></button>
+      </div>
     </div>
-    <div class="slider-control">
-      <button class="btn" :class="{ disabled: isFirstSlide }" @click="slide(-1)"><i class="arrow-left"></i></button>
-      <button class="btn" :class="{ disabled: isLastSlide }" @click="slide(1)"><i class="arrow-right"></i></button>
-    </div>
-  </div>
-  <div class="rising-slider">
-    <transition-group tag="ul" class="rising-slides" name="slide">
-      <li class="rising-slide" v-for="(slide, index) in slides" :key="index" v-show="index === currentIndex">
-        <div class="recipe-single" v-for="(recipe, index) in slide" :key="index">
-          <a class="recipe-img" href="" target="_blank">
-            <img :src="recipe.src" :alt="recipe.title">
-          </a>
-          <div class="recipe-title">
-            <a href="" target="_blank" :title="recipe.title">{{ recipe.title }}</a>
+    <div class="rising-slider">
+      <transition-group tag="ul" class="rising-slides" name="slide">
+        <li class="rising-slide" v-for="(slide, index) in slides" :key="index" v-show="index === currentIndex">
+          <div class="recipe-single" v-for="(recipe, index) in slide" :key="index">
+            <a class="recipe-img" href="" target="_blank">
+              <img :src="recipe.src" :alt="recipe.title">
+            </a>
+            <div class="recipe-title">
+              <a href="" target="_blank" :title="recipe.title">{{ recipe.title }}</a>
+            </div>
           </div>
-        </div>
-      </li>
-    </transition-group>
+        </li>
+      </transition-group>
+    </div>
   </div>
-</div>
 </template>
 
 <script>
