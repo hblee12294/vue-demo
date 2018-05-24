@@ -218,6 +218,12 @@ export default {
     .recipe-single {
       width: 150px;
 
+      &:hover {
+        img {
+          opacity: .9;
+        }
+      }
+
       .recipe-title {
         padding: 8px 4px;
         overflow: hidden;

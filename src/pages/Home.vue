@@ -7,6 +7,7 @@
       <head-slider></head-slider>
       <rising-recipes></rising-recipes>
       <pop-recipes></pop-recipes>
+      <questions-block></questions-block>
     </div>
     <div class="right-panel">
       <user-info></user-info>
@@ -20,6 +21,7 @@ import HeadSlider from '@/components/Home/HeadSlider'
 import UserInfo from '@/components/Home/UserInfo'
 import RisingRecipes from '@/components/Home/RisingRecipes'
 import PopRecipes from '@/components/Home/PopRecipes'
+import QuestionsBlock from '@/components/Home/QuestionsBlock'
 
 export default {
   name: 'Home',
@@ -28,7 +30,8 @@ export default {
     HeadSlider,
     UserInfo,
     RisingRecipes,
-    PopRecipes
+    PopRecipes,
+    QuestionsBlock
   }
 }
 </script>

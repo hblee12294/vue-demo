@@ -223,6 +223,11 @@ aside {
     margin-top: 22px;
     color: $color-red-dft;
     font-size: $font-sz-dft;
+
+    &:hover {
+      color: $color-white-dft;
+      background-color: $color-red-dft;
+    }
   }
 }
 
