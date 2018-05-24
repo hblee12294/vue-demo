@@ -8,6 +8,7 @@
       <rising-recipes></rising-recipes>
       <pop-recipes></pop-recipes>
       <questions-block></questions-block>
+      <pop-ingredients></pop-ingredients>
     </div>
     <div class="right-panel">
       <user-info></user-info>
@@ -22,6 +23,7 @@ import UserInfo from '@/components/Home/UserInfo'
 import RisingRecipes from '@/components/Home/RisingRecipes'
 import PopRecipes from '@/components/Home/PopRecipes'
 import QuestionsBlock from '@/components/Home/QuestionsBlock'
+import PopIngredients from '@/components/Home/PopIngredients'
 
 export default {
   name: 'Home',
@@ -31,7 +33,8 @@ export default {
     UserInfo,
     RisingRecipes,
     PopRecipes,
-    QuestionsBlock
+    QuestionsBlock,
+    PopIngredients
   }
 }
 </script>

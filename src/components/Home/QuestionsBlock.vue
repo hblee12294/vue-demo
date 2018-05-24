@@ -81,24 +81,24 @@ export default {
       }
     }
   }
+}
 
-  .questions {
-    .question {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 36px;
+.questions {
+  .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 36px;
 
-      a {
-        &:hover {
-          color: $color-red-dft;
-        }
+    a {
+      &:hover {
+        color: $color-red-dft;
       }
+    }
 
-      span {
-        color: $color-grey-dft;
-        font-size: $font-sz-smer;
-      }
+    span {
+      color: $color-grey-dft;
+      font-size: $font-sz-smer;
     }
   }
 }
