@@ -1,18 +1,22 @@
 <template>
   <main>
-    <div class="left-panel">
-      <cat-navigation></cat-navigation>
-    </div>
-    <div class="middle-panel">
-      <head-slider></head-slider>
-      <rising-recipes></rising-recipes>
-      <pop-recipes></pop-recipes>
-      <questions-block></questions-block>
-      <pop-ingredients></pop-ingredients>
+    <div class="main-panel">
+      <div class="left-panel">
+        <cat-navigation></cat-navigation>
+      </div>
+      <div class="middle-panel">
+        <head-slider></head-slider>
+        <rising-recipes></rising-recipes>
+        <pop-recipes></pop-recipes>
+        <questions-block></questions-block>
+        <pop-ingredients></pop-ingredients>
+      </div>
+      <pop-events></pop-events>
     </div>
     <div class="right-panel">
       <user-info></user-info>
     </div>
+
   </main>
 </template>
 
@@ -24,6 +28,7 @@ import RisingRecipes from '@/components/Home/RisingRecipes'
 import PopRecipes from '@/components/Home/PopRecipes'
 import QuestionsBlock from '@/components/Home/QuestionsBlock'
 import PopIngredients from '@/components/Home/PopIngredients'
+import PopEvents from '@/components/Home/PopEvents'
 
 export default {
   name: 'Home',
@@ -34,7 +39,8 @@ export default {
     RisingRecipes,
     PopRecipes,
     QuestionsBlock,
-    PopIngredients
+    PopIngredients,
+    PopEvents
   }
 }
 </script>
@@ -42,10 +48,23 @@ export default {
 <style lang="scss" scoped>
 main {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   padding: 30px $page-pad 0;
 
-  .left-panel {
-    padding-right: 40px;
+  .main-panel {
+    flex: 0 0 0%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .left-panel {
+      flex: 0 0 0%;
+      padding-right: 40px;
+    }
+
+    .middle-panel {
+      flex: 0 0 0%;
+    }
   }
 
   .right-panel {
