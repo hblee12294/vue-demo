@@ -14,10 +14,12 @@
       <li class="event" v-for="(event, index) in events" :key="index">
         <a href="">
           <div class="summary">
-            <span class="tag">{{ event.tag }}</span>
+            <span class="tag">#{{ event.tag }}#</span>
             <span class="description">{{ event.description }}</span>
           </div>
-          <div class="posts"></div>
+          <div class="posts">
+            <img v-for="(post, index) in event.posts" :key="index" :src="post.src" :alt="post.title">
+          </div>
         </a>
       </li>
     </ul>
@@ -36,7 +38,7 @@ export default {
         description: '好好吃一顿早餐',
         posts: [{
           title: '牛奶红茶贝果',
-          src: 'http://s2.cdn.xiachufang.com/cf448c6c522b11e7bc9d0242ac110002_1280w_1215h.jpg?imageView2/1/w/280/h/280/interlace/1/q/90'
+          src: 'http://s2.cdn.xiachufang.com/3cf6f30fde08445ba7065c732f2e868a_1280w_853h.jpg?imageView2/1/w/280/h/280/interlace/1/q/90'
         }, {
           title: '早餐•2017年8月17日',
           src: 'http://s2.cdn.xiachufang.com/5759122808814c4595993eea95154a48_1280w_929h.jpg?imageView2/1/w/280/h/280/interlace/1/q/90'
@@ -47,7 +49,7 @@ export default {
       }, {
         tag: '我爱的戚风蛋糕，我要把你做到最好',
         description: '最爱戚风蛋糕，对我来说，戚风就是每天吃都喜欢，两天不吃就会想的一种食物～所以一定...',
-        images: [{
+        posts: [{
           title: '我的戚风蛋糕',
           src: 'http://s1.cdn.xiachufang.com/764bae47f2eb442c908c84e5d3e5aa9d_1616w_1080h.jpg@2o_50sh_1pr_1l_280w_280h_1c_1e_90q_1wh'
         }, {
@@ -60,7 +62,7 @@ export default {
       }, {
         tag: '宿舍小厨房',
         description: '就算条件简陋、食材有限、没有背景、没有道具依然挡不住我们一颗爱做(zhe)饭(teng)的...',
-        images: [{
+        posts: [{
           title: '午餐•2017年5月4日',
           src: 'http://s1.cdn.xiachufang.com/a9b23eee307111e7947d0242ac110002_1280w_960h.jpg@2o_50sh_1pr_1l_280w_280h_1c_1e_90q_1wh'
         }, {
@@ -73,7 +75,7 @@ export default {
       }, {
         tag: '厨神养成计划',
         description: '准高三 开学了也要为了成为一个酷炫的厨神做准备拔草升级中 ︿(￣︶￣)︿',
-        images: [{
+        posts: [{
           title: '快手炒乌冬',
           src: 'http://s2.cdn.xiachufang.com/3df0a2a2eca34a7b9d055758d33f9ac7_1280w_1280h.jpg?imageView2/1/w/280/h/280/interlace/1/q/90'
         }, {
@@ -86,7 +88,7 @@ export default {
       }, {
         tag: '美滋滋的下午茶',
         description: 'cheat day',
-        images: [{
+        posts: [{
           title: '午餐•2017年1月18日',
           src: 'http://s2.cdn.xiachufang.com/70470708dd4111e6bc9d0242ac110002_1620w_1620h.jpg?imageView2/1/w/280/h/280/interlace/1/q/90'
         }, {
@@ -99,7 +101,7 @@ export default {
       }, {
         tag: '24小时流行作品',
         description: '每张照片背后都有故事，几句寒暄传递生活的力量。',
-        images: [{
+        posts: [{
           title: '早餐•2018年5月25日',
           src: 'http://s2.cdn.xiachufang.com/f89cc8c3d0e747f6abae7b17654df9ba_1279w_1280h.jpg?imageView2/1/w/280/h/280/interlace/1/q/90'
         }, {
@@ -126,6 +128,7 @@ export default {
     background-color: $color-grey-lhter;
 
     .title {
+      margin-bottom: 5px;
       color: $color-gold-dft;
       font-size: $font-sz-lgmd;
 
@@ -145,6 +148,45 @@ export default {
           color: $color-white-dft;
           background-color: $color-red-dft;
         }
+      }
+    }
+  }
+}
+
+.event {
+  a {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    margin-bottom: 2px;
+    background-color: $color-grey-lhter;
+
+    &:hover {
+      background-color: $color-grey-dsabl;
+    }
+
+    .summary {
+      display: flex;
+      flex-direction: column;
+      padding: 8px 16px;
+
+      .tag {
+        margin-bottom: 5px;
+      }
+
+      .description {
+        color: $color-grey-dft;
+        font-size: $font-sz-smer;
+      }
+    }
+
+    .posts {
+      display: flex;
+
+      img {
+        height: 80px;
+        width: 80px;
+        padding-left: 2px;
       }
     }
   }
